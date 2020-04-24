@@ -1,5 +1,6 @@
 #calculadora em python
-operacao = input('''
+def calculadora():
+    operacao = input('''
 
 Digite a operação matemática que você deseja concluir:
 + para adicao
@@ -35,3 +36,21 @@ print (numero1 / numero2)
 else:
     print ('Você não digitou um operador válido, execute o programa novamente.
 ')
+           
+           
+           def novamente():
+            calc_novamente = input('''
+
+Deseja calcular novamente?
+Digite S para SIM ou N para NÃO.
+
+''')
+
+    if calc_novamente.upper() == 'Y':
+        calculate()
+    elif calc_novamente.upper() == 'N':
+        print('ok')
+    else:
+        novamente()
+           
+           calculadora ()
